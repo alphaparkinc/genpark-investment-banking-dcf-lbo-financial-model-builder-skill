@@ -1,0 +1,41 @@
+{
+  "name": "genpark-investment-banking-dcf-lbo-financial-model-builder-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Wall Street investment banking financial model builder constructing audited dynamic DCF/LBO models from SEC 10-K filings with dynamic formulas.",
+  "author": "genpark",
+  "category": "fintech-ai",
+  "tags": [
+    "investment-banking",
+    "financial-modeling",
+    "lbo-model",
+    "dcf-valuation",
+    "rogo-ai"
+  ],
+  "inputs": {
+    "target_ticker_or_company": {
+      "type": "string"
+    },
+    "model_type": {
+      "type": "string"
+    },
+    "forecast_years": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "financial_model_id": {
+      "type": "string"
+    },
+    "projected_irr_internal_rate_of_return_pct": {
+      "type": "number"
+    },
+    "money_on_invested_capital_moic": {
+      "type": "number"
+    },
+    "excel_formulas_dynamic_audited": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
